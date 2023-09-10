@@ -1,15 +1,65 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> /* Webpage can dynamically adapt to screen size */
+    <style>
+        body {
+            background-color: #222;
+            color: white; /* Text color */
+            text-align: center;
+        }
+
+        #container {
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 15px;
+            width: 80%;
+        }
+
+        #Title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #CoverArt {
+            border-radius: 50%; /* Makes the image circular */
+            max-width: 100%;
+            height: auto;
+        }
+
+        #Rating {
+            font-size: 20px;
+        }
+
+        #Trailer {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #Summary {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #Actors {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="title">Hello World</h1>
-    <div id="mainDiv">Hello Div</div>
-    <br />
-    <button onclick="buttonClicked()">Click me</button>
+    <div id="container">
+        <h1 id="Title">Interstellar</h1>
+        <img id="CoverArt" src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Cover Art">
+        <h5 id="Rating">IMDB Rating: 8.7/10</h5>
+        <iframe src="https://www.youtube.com/embed/2LqzF5WauAw" title="Interstellar Movie - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p><a href="https://www.imdb.com/title/tt0816692/" target="_blank">IMDB Page</a></p>
+        <p id="Summary">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+        <ul id="Actors">
+            <li>Matthew McConaughey</li>
+            <li>Anne Hathaway</li>
+            <li>Jessica Chastain</li>
+        </ul>
+    </div>
 </body>
 </html>
